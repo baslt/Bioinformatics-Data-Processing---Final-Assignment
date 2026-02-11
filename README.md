@@ -109,7 +109,7 @@ ggplot(all_headers, aes(x = length)) +
   )
 ```
 
-![](BZD_projekt_files/figure-commonmark/unnamed-chunk-2-1.png)
+![](figures/contig_lengths_distribution.png)
 
 The contig length distributions indicate clear differences between the
 two assemblers. While both metaMDBG and myloasm produce a large number
@@ -157,7 +157,7 @@ ggplot(all_headers, aes(x = coverage, y = length)) +
     )
 ```
 
-![](BZD_projekt_files/figure-commonmark/unnamed-chunk-3-1.png)
+![](figures/correlation_both.png)
 
 ``` r
 ggplot(metamdbg_headers, aes(x = coverage, y = length)) +
@@ -174,7 +174,7 @@ ggplot(metamdbg_headers, aes(x = coverage, y = length)) +
   theme_minimal()
 ```
 
-![](BZD_projekt_files/figure-commonmark/unnamed-chunk-4-1.png)
+![](figures/correlation_metaMDBG.png)
 
 ``` r
 myloasm_headers <- myloasm_headers %>%
@@ -194,7 +194,7 @@ ggplot(myloasm_headers, aes(x = coverage, y = length, color = circular)) +
   theme_minimal()
 ```
 
-![](BZD_projekt_files/figure-commonmark/unnamed-chunk-5-1.png)
+![](figures/correlation_myloasm.png)
 
 Analysis of the relationship between contig length and sequencing
 coverage revealed that myloasm produces large circular contigs already
@@ -360,7 +360,7 @@ ggplot(tresholds, aes(x = assembler, fill = quality)) +
   theme(strip.text = element_text(face = "bold"))
 ```
 
-![](BZD_projekt_files/figure-commonmark/unnamed-chunk-11-1.png)
+![](figures/quality_tresholds.png)
 
 Both assemblers reconstructed high-quality large circular contigs.
 Although myloasm also generated a small number of low-quality contigs,
@@ -390,7 +390,7 @@ ggplot(master_data, aes(y = phylum, fill = phylum)) +
         strip.background = element_blank())
 ```
 
-![](BZD_projekt_files/figure-commonmark/unnamed-chunk-12-1.png)
+![](figures/contigs_per_phylum.png)
 
 Both assemblers recovered genomes from similar major microbial phyla.
 Nevertheless, myloasm reconstructed a higher number of large circular
@@ -405,3 +405,4 @@ contigs from the analyzed dataset. While both assemblers are capable of
 producing high-quality assemblies, myloasm consistently reconstructs a
 higher number of long circular contigs across multiple phyla, suggesting
 better performance in this context.
+
