@@ -198,10 +198,13 @@ ggplot(myloasm_headers, aes(x = coverage, y = length, color = circular)) +
 
 Analysis of the relationship between contig length and sequencing
 coverage revealed that myloasm produces large circular contigs already
-at low coverage. This can be both positive and negative - it shows high
-efficiency, but can also mean that the assembler guesses too often.
-MetaMDBG on the other hand produced much less circular contigs and
-tended to do so mostly in the case of higher coverage.
+at low coverage. This can be both positive and negative - it may indicate
+a higher ability to assemble long contigs from limited sequencing depth;
+however, assemblies generated at lower coverage may also be associated
+with increased uncertainty.
+
+In contrast, metaMDBG reconstructed fewer circular contigs overall and
+tended to do so predominantly at higher coveragee.
 
 ### <u>CheckM2 and GTDB-Tk</u>
 
@@ -405,4 +408,5 @@ contigs from the analyzed dataset. While both assemblers are capable of
 producing high-quality assemblies, myloasm consistently reconstructs a
 higher number of long circular contigs across multiple phyla, suggesting
 better performance in this context.
+
 
