@@ -204,7 +204,7 @@ however, assemblies generated at lower coverage may also be associated
 with increased uncertainty.
 
 In contrast, metaMDBG reconstructed fewer circular contigs overall and
-tended to do so predominantly at higher coveragee.
+tended to do so predominantly at higher coverage.
 
 ### <u>CheckM2 and GTDB-Tk</u>
 
@@ -408,5 +408,6 @@ contigs from the analyzed dataset. While both assemblers are capable of
 producing high-quality assemblies, myloasm consistently reconstructs a
 higher number of long circular contigs across multiple phyla, suggesting
 better performance in this context.
+
 
 
